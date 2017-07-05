@@ -1,0 +1,9 @@
+<div class="nine columns" [class.voltooid]="todo.voltooid">{{ todo.title }}</div>
+<div class="three columns" *ngIf="todo.voltooid">
+  <i class="fa fa-check" ></i>
+  </div>
+<div class="three columns" *ngIf="!todo.voltooid">
+  <button class="button-primary" (click)="vinkAf()">
+    Afvinken
+  </button>
+  </div>

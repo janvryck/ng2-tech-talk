@@ -1,0 +1,7 @@
+<div class="row header">
+  <div class="nine columns">To-do</div>
+  <div class="three columns">Voltooid</div>
+</div>
+<div class="row" *ngFor="let todoFromList of todos">
+  <app-todo-item [todo]="todoFromList"></app-todo-item>
+</div>
